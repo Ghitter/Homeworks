@@ -27,17 +27,17 @@ window.addEventListener("mousemove", (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    let timeline = gsap.timeline();
-  
-    parallax_el.forEach(el => {
-      timeline.from(
-        el,
-        {
-         top: `${el.offsetHeight / 2 + el.dataset.distance}px`,
-          
-          duration: 1.7,
-        }, "1.7"
-      );
-    });
+  let timeline = gsap.timeline();
+
+  parallax_el.forEach(el => {
+    const direction = el.style.bottom.includes('-') ? 1 : -1;
+    const top = direction === 1 ? window.innerHeight : -el.offsetHeight;
+    timeline.from(
+      el,
+      {
+        top: `${top}px`,
+        duration: 1,
+      }, "1"
+    );
   });
-  
+});
