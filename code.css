@@ -1,0 +1,78 @@
+body {
+    user-select: none;
+}
+
+.bg-img {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 300px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(bad.ttf) format('truetype');
+}
+
+.manage{
+    position: relative; 
+    z-index: 2;
+    font-family: myfont;
+    font-size: 1.1rem;
+}
+
+#open {
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: myfont;
+    color: rgba(150, 44, 150, 0.815);
+}
+
+#close {
+    font-weight: bold;
+    font-size: 0.5rem;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: myfont;
+    color: rgba(150, 44, 150, 0.815);
+}
+
+.modal-container{
+    position: relative; 
+    z-index: 2;
+    font-family: myfont;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+#close {
+    font-size: 1.0rem;
+    background: #c7c7c7;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close:hover {
+    background: #727272;
+}
