@@ -335,19 +335,24 @@ main{
 }
 
 @media (min-width: 1920px) {
-  body { font-size: 24px; }
+  body { font-size: 27px; }
 
-  .fourfive { height: 70px; width: 68px; bottom: 78%; left: 65.87%; }
-  .fourfour { width: 80px; height: 90px; bottom: 63.88%; left: 85.97%; }
-  .fourthree { width: 60px; height: 75px; bottom: 78%; left: 3.49%; }
-  .fourtwo { width: 180px; height: 200px; bottom: 45%; left: 92.49%; }
-  .fourone { height: 200px; width: 180px; bottom: 50%; left: 7.5%; }
-  .text { height: 120px; width: 600px; bottom: 55%; left: 50%; }
-  .threethree { height: 80px; width: 120px; bottom: 80%; left: 15.51%; }
-  .threetwo { height: 50px; width: 80px; bottom: 88%; left: 29.5%; }
-  .threeone { height: 100px; width: 80px; bottom: 41%; left: 90.5%; }
-  .three { height: 310px; width: 280px; bottom: -10%; left: 82.5%; }
-  .twoone { height: 250px; width: 200px; bottom: -3%; left: 13.49%; }
-  .two { height: 250px; width: 200px; bottom: -19%; left: 31.49%; }
-  .one { height: 570px; width: 760px; bottom: -30%; left: 50%; }
+  .fourfive { height: 89px; width: 86px; bottom: 81.7%; left: 63.3%; }
+  .fourfour { width: 102px; height: 113px; bottom: 66.7%; left: 83.2%; }
+  .fourthree { width: 75px; height: 93px; bottom: 79.7%; left: 4.9%; }
+  .fourtwo { width: 224px; height: 245px; bottom: 47.8%; left: 90.8%; }
+  .fourone { height: 245px; width: 224px; bottom: 51.7%; left: 8.9%; }
+  .text { height: 160px; width: 726px; bottom: 56.7%; left: 50%; }
+  .threethree { height: 106px; width: 144px; bottom: 81.7%; left: 16.8%; }
+  .threetwo { height: 69px; width: 102px; bottom: 89.7%; left: 30.8%; }
+  .threeone { height: 122px; width: 102px; bottom: 42.7%; left: 88.3%; }
+  .three { height: 381px; width: 349px; bottom: -7.7%; left: 80.8%; }
+  .twoone { height: 308px; width: 255px; bottom: -1.7%; left: 14.8%; }
+  .two { height: 308px; width: 255px; bottom: -17.7%; left: 31%; }
+  .one { height: 680px; width: 885px; bottom: -27.7%; left: 50%; }
 }
+
+
+
+
+
