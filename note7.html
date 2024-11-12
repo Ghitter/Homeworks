@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalization up to 3NF</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Light gray background */
+            color: #2d2d2d;
+        }
+
+        .note-container {
+            width: 100%;
+            padding: 40px;
+            background-color: #ffffff;
+            border-left: 10px solid #9caf88; /* Sage green accent */
+            color: #2d2d2d;
+        }
+
+        .note-title {
+            font-size: 36px;
+            color: #4a5d4a; /* Darker sage green */
+            border-bottom: 2px solid #9caf88;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .note-content {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #4a5d4a;
+            margin-top: 25px;
+            font-size: 22px;
+            border-bottom: 1px solid #9caf88;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+            padding-top: 10px;
+            border-top: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="note-container">
+        <h1 class="note-title">Normalization up to 3NF</h1>
+        <div class="note-content">
+            <p class="section-title">1) Introduction to Normalization</p>
+            <p>Normalization is the process of organizing the data in a database to reduce redundancy and dependency by dividing large tables into smaller ones and establishing relationships between them. The main goal is to ensure that the database design is efficient, consistent, and free from undesirable anomalies.</p>
+
+            <p class="section-title">2) First Normal Form (1NF)</p>
+            <p>A table is in <b>1NF</b> if it satisfies the following conditions:</p>
+            <ul>
+                <li>Each column contains atomic values (no multiple values in a single column).</li>
+                <li>Each column contains values of a single type (e.g., numbers, dates, etc.).</li>
+                <li>Each record is unique, meaning there is a primary key.</li>
+            </ul>
+
+            <p class="section-title">3) Second Normal Form (2NF)</p>
+            <p>A table is in <b>2NF</b> if it is in 1NF and it satisfies the following condition:</p>
+            <ul>
+                <li>There are no partial dependencies, meaning all non-key attributes must depend on the entire primary key.</li>
+            </ul>
+            <p>This is relevant for tables with composite primary keys, where attributes must depend on the full key, not just part of it.</p>
+
+            <p class="section-title">4) Third Normal Form (3NF)</p>
+            <p>A table is in <b>3NF</b> if it is in 2NF and satisfies the following condition:</p>
+            <ul>
+                <li>There are no transitive dependencies, meaning non-key attributes should not depend on other non-key attributes.</li>
+            </ul>
+            <p>This ensures that all attributes are only dependent on the primary key, leading to a more efficient and normalized database.</p>
+
+            <p class="section-title">5) Example</p>
+            <p>Consider a table that stores information about students, courses, and instructors:</p>
+            <pre>
+| StudentID | StudentName | CourseID | CourseName | InstructorName |
+|-----------|-------------|----------|------------|----------------|
+| 1         | Alice       | 101      | Math       | Prof. Smith    |
+| 2         | Bob         | 102      | Science    | Prof. Brown    |
+            </pre>
+
+            <p>After applying the normalization process up to 3NF, this table would be split into smaller tables, removing redundancy and ensuring efficient data storage.</p>
+        </div>
+    </div>
+    <footer>
+       Mishan Website
+    </footer>
+</body>
+</html>

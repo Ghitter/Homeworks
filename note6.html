@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Design and Models</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Light gray background */
+            color: #2d2d2d;
+        }
+
+        .note-container {
+            width: 100%;
+            padding: 40px;
+            background-color: #ffffff;
+            border-left: 10px solid #9caf88; /* Sage green accent */
+            color: #2d2d2d;
+        }
+
+        .note-title {
+            font-size: 36px;
+            color: #4a5d4a; /* Darker sage green */
+            border-bottom: 2px solid #9caf88;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .note-content {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #4a5d4a;
+            margin-top: 25px;
+            font-size: 22px;
+            border-bottom: 1px solid #9caf88;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+            padding-top: 10px;
+            border-top: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="note-container">
+        <h1 class="note-title">Database Design and Database Models</h1>
+        <div class="note-content">
+            <p class="section-title">1) Database Design</p>
+            <p>Database design refers to the process of structuring a database in a way that meets the requirements of the users while maintaining its efficiency, scalability, and security. It involves defining the database schema, tables, relationships, and constraints. A well-designed database helps ensure data integrity, ease of access, and better performance for applications.</p>
+
+            <p class="section-title">2) Database Models</p>
+            <p>Database models define the structure and organization of data within a database. The key types of database models include:</p>
+            <ul>
+                <li><b>Hierarchical Model</b>: Data is organized in a tree-like structure with parent-child relationships, ideal for representing nested data.</li>
+                <li><b>Network Model</b>: Similar to the hierarchical model but allows more complex relationships between data through multiple parent-child links.</li>
+                <li><b>Relational Model</b>: Data is stored in tables (relations), with rows representing records and columns representing attributes. This is the most commonly used model in modern databases.</li>
+                <li><b>Object-Oriented Model</b>: Data is represented as objects, similar to object-oriented programming, where data and its operations are encapsulated together.</li>
+                <li><b>Entity-Relationship (ER) Model</b>: Uses entities and relationships to represent data and its relationships, often used in database design to map out the structure.</li>
+                <li><b>Document Model</b>: Data is stored in document formats like JSON or XML, and is often used in NoSQL databases.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Mishan Website
+    </footer>
+</body>
+</html>

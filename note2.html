@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Keys</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Light gray background */
+            color: #2d2d2d;
+        }
+
+        .note-container {
+            width: 100%;
+            padding: 40px;
+            background-color: #ffffff;
+            border-left: 10px solid #9caf88; /* Sage green accent */
+            color: #2d2d2d;
+        }
+
+        .note-title {
+            font-size: 36px;
+            color: #4a5d4a; /* Darker sage green */
+            border-bottom: 2px solid #9caf88;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .note-subtitle {
+            font-size: 18px;
+            color: #6e826e; /* Medium sage green */
+            margin-bottom: 25px;
+        }
+
+        .note-content {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .term {
+            font-weight: bold;
+            color: #4a5d4a;
+            display: block;
+            margin-top: 25px;
+            font-size: 22px;
+            border-bottom: 1px solid #9caf88;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+            padding-top: 10px;
+            border-top: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="note-container">
+        <h1 class="note-title">Keys in DBMS</h1>
+        <p class="note-subtitle">Definitions of various types of keys in Database Management Systems</p>
+        <div class="note-content">
+            <p><span class="term">Primary Key</span>: A unique identifier for each record in a table. It ensures that no two rows have the same value in this field.</p>
+
+            <p><span class="term">Foreign Key</span>: A field in a table that links to the primary key of another table to establish a relationship between the two tables.</p>
+
+            <p><span class="term">Candidate Key</span>: A field or set of fields that can uniquely identify a record in a table. A table can have multiple candidate keys, but only one can be chosen as the primary key.</p>
+
+            <p><span class="term">Composite Key</span>: A key composed of two or more fields used together to uniquely identify a record in a table. For example, a combination of "Student ID" and "Course ID" in a registration table.</p>
+
+            <p><span class="term">Artificial Key</span>: A unique identifier created specifically for a table when no natural primary key is present. It is usually an auto-incrementing number or a system-generated identifier.</p>
+
+            <p><span class="term">Super Key</span>: A set of one or more columns that can uniquely identify a record in a table. It includes candidate keys and primary keys.</p>
+        </div>
+    </div>
+    <footer>
+        Mishan Website
+    </footer>
+</body>
+</html>

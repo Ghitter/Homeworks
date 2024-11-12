@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Security, Integrity & Anomalies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Light gray background */
+            color: #2d2d2d;
+        }
+
+        .note-container {
+            width: 100%;
+            padding: 40px;
+            background-color: #ffffff;
+            border-left: 10px solid #9caf88; /* Sage green accent */
+            color: #2d2d2d;
+        }
+
+        .note-title {
+            font-size: 36px;
+            color: #4a5d4a; /* Darker sage green */
+            border-bottom: 2px solid #9caf88;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .note-content {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #4a5d4a;
+            margin-top: 25px;
+            font-size: 22px;
+            border-bottom: 1px solid #9caf88;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+            padding-top: 10px;
+            border-top: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="note-container">
+        <h1 class="note-title">Data Security, Integrity & Anomalies</h1>
+        <div class="note-content">
+            <p class="section-title">1) Layers of Data Security</p>
+            <p>Data security refers to the protection of data from unauthorized access or corruption. The layers of data security can be summarized as:</p>
+            <ul>
+                <li><b>Physical Security</b>: Protects the physical hardware (e.g., servers) from damage, theft, or unauthorized access.</li>
+                <li><b>Network Security</b>: Protects data during transmission through encryption, firewalls, and intrusion detection systems.</li>
+                <li><b>Access Control</b>: Limits access to data through authentication mechanisms like passwords, biometrics, and multi-factor authentication.</li>
+                <li><b>Application Security</b>: Secures the software and applications interacting with the data using secure coding practices and vulnerability testing.</li>
+                <li><b>Data Encryption</b>: Encrypts sensitive data to prevent unauthorized access even if the data is intercepted.</li>
+            </ul>
+
+            <p class="section-title">2) Data Integrity</p>
+            <p>Data integrity ensures the accuracy, consistency, and reliability of data throughout its lifecycle. It is maintained through:</p>
+            <ul>
+                <li><b>Data Validation</b>: Ensures that only valid data is entered into the database.</li>
+                <li><b>Constraints</b>: Enforces rules (like primary keys, foreign keys) to maintain the integrity of relationships and data accuracy.</li>
+                <li><b>Transaction Management</b>: Uses techniques like ACID (Atomicity, Consistency, Isolation, Durability) to ensure data remains accurate during database transactions.</li>
+                <li><b>Backup and Recovery</b>: Ensures that data is regularly backed up and can be recovered if corruption or loss occurs.</li>
+            </ul>
+
+            <p class="section-title">3) Anomalies</p>
+            <p>Anomalies in databases refer to inconsistencies or problems that can arise due to incorrect data or design issues. Common types include:</p>
+            <ul>
+                <li><b>Insertion Anomaly</b>: Occurs when you cannot insert data due to missing information (e.g., trying to add a record without a required field).</li>
+                <li><b>Update Anomaly</b>: Occurs when updates are made to one part of the database but not reflected in all related instances, leading to inconsistent data.</li>
+                <li><b>Deletion Anomaly</b>: Occurs when deleting data leads to the unintentional loss of other related data, violating referential integrity.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Mishan Website
+    </footer>
+</body>
+</html>
